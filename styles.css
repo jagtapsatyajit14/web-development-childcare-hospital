@@ -1,0 +1,174 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #0a74da;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header .logo-image {
+    width: 50px;  /* Adjust the size of the logo */
+    height: auto;
+    margin-right: 20px; /* Space between logo and text */
+   height: 67px;
+    width: 198px;
+}
+
+header .logo h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.hero {
+    background-image: url('backgroung.jpg'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.hero-text {
+    background-color: rgba(0, 0, 0, 0.5); /* Optional: adds a semi-transparent overlay to make text stand out */
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.services-container {
+    background-image: url('services3.jpg');
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 20px;
+}
+
+.service {
+    background-color: rgba(10, 87, 104, 0.3);
+    padding: 20px;
+    border-radius: 8px;
+    color: white;
+    width: 50%;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+section {
+    padding: 40px 70px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+
+
+form {
+    display: grid;
+    gap: 10px;
+}
+
+form input, form textarea {
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+form button {
+    background-color: #0a74da;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #005bb5;
+}
+
+/* About Us Section Styles */
+#about {
+    padding: 40px 70px;
+    text-align: center;
+}
+
+/* Container for all images */
+.about-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;  /* Space between images */
+    margin-top: 20px;
+}
+
+/* Individual image container */
+.image-container {
+    width: 22%;  /* Controls the width of each image container */
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;  /* Center the text below the images */
+}
+
+/* Styling for the images */
+.about-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Styling for the titles under the images */
+.image-container h4 {
+    margin-top: 10px;
+    font-size: 18px;
+    color: black;  /* Blue color for the titles */
+    font-weight: bold;
+}
+
+/* Responsive behavior for small screens */
+@media (max-width: 768px) {
+    .image-container {
+        width: 45%;  /* Adjust image container width for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .image-container {
+        width: 90%;  /* Make images take up most of the screen on very small screens */
+    }
+}
+
+
